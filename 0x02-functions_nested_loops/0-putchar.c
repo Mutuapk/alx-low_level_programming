@@ -1,15 +1,22 @@
 #include "main.h"
 
 /**
- * main - print main
- * Return: 0 if succesful
+ * main - print putchar
+ * Return: always 0
  */
+
 int main(void)
 {
-_putchar('M');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c'); 
+_putchar('h'); 
 _putchar('a');
-_putchar('i');
-_putchar('n');
-_putchar('\n');
+_putchar('r');
+_putchar('\n'); 
+
 return (0);
+
 }

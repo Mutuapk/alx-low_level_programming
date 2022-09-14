@@ -1,10 +1,10 @@
-#ifndef main.h
-#define main.h
+#ifndef main.h_included
+#define main.h_included
 
 void print_alphabet(void);
-print_alphabet_x10(void);
+void print_alphabet_x10(void);
 int _islower(int c);
-int _putchar(char c);
+int _putchar(char);
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
@@ -14,5 +14,6 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
+void num(int r ,int n);
 
 #endif
