@@ -1,26 +1,27 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - encodes a string using rot13
- * @a: string to encode
- * Return: encode to rot13
+ *rot13 - encodes a string using rot13.
+ * @str: string.
+ * Return: string.
  */
 
-char *rot13(char *a)
+char *rot13(char *str)
 {
-int i, x, hold;
-char check[] = "AaZz";
-char ntom[] = "NOPQRSTUVWXYZABCDEFGHIJKLM";
+int i;
 
-for (i = 0; *(a + i) != '\0'; i++)
-for (x = 0; x < 2; x++);
+for (i = 0; str[i] != '\0'; i++)
 {
-if (*(a + i) >= check[x] && *(a + i) <= check[x + 2])
+if ((*(str + i) >= 'a' && *(str + i) < 'n')
+|| (*(str + i) >= 'A' && *(str + i) < 'N'))
 {
-hold = (*(a + i) - 65 - (x * 32));
-*(a + i) = (ntom[hold] + (x * 32));
+*(str + i) += 13;
+}
+else if ((*(str + i) >= 'n' && *(str + i) <= 'z')
+|| (*(str + i) >= 'N' && *(str + i) <= 'Z'))
+{
+*(str + i) -= 13;
 }
 }
-return (a);
+return (str);
 }
