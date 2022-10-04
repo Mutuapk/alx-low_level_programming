@@ -24,7 +24,7 @@ else
 for (; s2[len2]; len2++)
 ;
 len2++;
-ptr = malloc((len1 + len2) * sizeof(char));
+ptr = malloc((len1 + len2) *sizeof(char));
 
 if (!ptr)
 return (NULL);
