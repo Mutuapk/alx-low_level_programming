@@ -12,4 +12,8 @@ if __name__ == "__main__":
         [0, 1, 1, 1, 0, 0],
         [0, 0, 0, 0, 0, 0]
     ]
+<<<<<<< HEAD
     print(island_perimeter(grid))    
+=======
+    print(island_perimeter(grid))
+>>>>>>> 00b1525a11ac21e79c74ac89c9cc8ea074eb9809
